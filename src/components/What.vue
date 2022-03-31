@@ -1,6 +1,8 @@
 <template>
   <div class="what">
-      <h1>{{ msg }}</h1>  
+      <h3>{{ msg }}</h3>
+      <p>NFT每次交易都會有固定比例成為該貓的生活費，實現自己養自己的公益模式</p>
+
       </div>
 </template>
 
@@ -16,24 +18,6 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-.what{
-    width: 100%;
-    height: 80vh;
-    background-color: #FFF7F4;
-}
-h1 {
-  margin: 0;
-  // margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  // margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
+
 </style>
