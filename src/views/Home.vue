@@ -16,7 +16,6 @@
 import { defineComponent } from "vue";
 // import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import Landing from "@/components/Landing.vue"; // @ is an alias to /src
-import What from "@/components/What.vue"; // @ is an alias to /src
 import { useBoard, useEthers } from 'vue-dapp';
 
 export default defineComponent({

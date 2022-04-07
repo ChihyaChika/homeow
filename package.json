@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "font-awesome": "4.7.0",
     "vue": "^3.0.0",
-    "vue-dapp": "^0.4.7",
+    "vue-dapp": "0.4.8",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },

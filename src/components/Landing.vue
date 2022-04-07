@@ -1,6 +1,7 @@
 <template>
   <div class="landing">
     <section id="kv">
+      <div class="fake"></div>
       <p>
         我們提供一個<strong>以太坊募資管道</strong><br />
         讓一般大眾可對<strong>浪貓一對一捐款</strong><br />
@@ -9,6 +10,7 @@
     </section>
     <section id="what">
       <h3>WHAT WE DO ?</h3>
+      <div class="fake"></div>
       <p>NFT每次交易都會有固定比例成為該貓的生活費，實現自己養自己的公益模式</p>
       <img src="" alt="" />
       <h4>厝喵捐款智能合約特色</h4>
@@ -16,17 +18,20 @@
         <div>
           <img src="" alt="" />
           <h5>捐款不入我手</h5>
+          <div class="fake"></div>
           <p>在您購買NFT當下<br />捐款直接轉入中途錢包</p>
           <small>僅扣除34%平台營運費用</small>
         </div>
         <div>
           <img src="" alt="" />
           <h5>捐款脈絡透明化</h5>
+          <div class="fake"></div>
           <p>已募得金額、來源皆可追蹤</p>
         </div>
         <div>
           <img src="" alt="" />
           <h5>錢包住著酷東西</h5>
+          <div class="fake"></div>
           <p>您的愛心會化為厝喵住在錢包中<br />透過NFT展示你關注的議題</p>
         </div>
       </div>
@@ -40,7 +45,9 @@
       <div class="example"></div>
       <div class="step">
         <div>
-          <img src="" alt="" />
+          <i class="fa-regular fa-window-restore"></i>
+          <font-awesome-icon icon="fa-regular fa-window-restore" />
+          <img class="icon" src="" alt="" />
           <p>Step 1</p>
           <p>
             在我們的官網 <a href="" target="_blank">浪喵列表</a>或
@@ -48,19 +55,19 @@
           </p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img class="icon" src="" alt="" />
           <p>Step 2</p>
           <p>查看浪喵故事，選擇你想要伸出援手的厝喵NFT</p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img class="icon" src="" alt="" />
           <p>Step 3</p>
           <p>
             購買NFT等同於在線上認養浪貓，以太幣將轉化為浪貓生活基金，厝喵NFT也會住進您的虛擬錢包
           </p>
         </div>
         <div>
-          <img src="" alt="" />
+          <img class="icon" src="" alt="" />
           <p>Step 4</p>
           <p>
             感謝您的愛心！您可以持續回到<a href="" target="_blank">浪喵列表</a
@@ -122,6 +129,8 @@ export default defineComponent({
     letter-spacing: 0.145em;
     color: #201f1d;
   }
+
+  
 }
 #what {
   background-color: #fff7f4;
@@ -129,7 +138,12 @@ export default defineComponent({
   .feature {
     display: flex;
     justify-content: space-evenly;
+
+    div {
+      width: 100px;
+    }
   }
+
 }
 
 #how {
@@ -142,6 +156,8 @@ export default defineComponent({
   .step{
     p {
       text-align: left;
+      width: 60%;
+      display: inline-block;
     }
   }
 }
@@ -160,5 +176,25 @@ export default defineComponent({
 
 #team {
   background-color: white;
+}
+.fake {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: inline-block;
+  background: white;
+  opacity: 0.5;
+}
+.icon {
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  background: white;
+  display: inline-block;
+  opacity: 0.5;
+  margin: 0 auto;
+  transform: translate(-20px, 10px)
+
 }
 </style>
